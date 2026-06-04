@@ -1,0 +1,79 @@
+@use '../abstracts/auxiliares' as*;
+
+.problema {
+  &__container {
+    display: flex;
+    gap: 2.5rem;
+    padding: 7.63rem 6.1rem;
+
+    @include respond(medium-small) {
+      @include flex($direction: column);
+      padding: 3.12rem;
+    }
+
+    &-textos {
+      display: flex;
+      flex-flow: column;
+      gap: 2rem;
+      flex: 1;
+
+      &--sobtitulo {
+        text-transform: uppercase;
+        font-weight: 200;
+
+        @include respond(medium-small) {
+          text-align: center;
+        }
+      }
+
+      &--titulo {
+        @include respond(medium-small) {
+          font-size: 2.3rem;
+        }
+      }
+
+      &--subtitulo {
+        @include respond(medium-small) {
+          font-size: 1.33rem;
+        }
+      }
+    }
+
+    &-cards {
+      @include flex($direction: column, $gap: .52rem);
+      flex: 1;
+
+      &--card {
+        @include flex($direction: column, $gap: .52rem);
+        border-bottom: solid 1px $cor-dourado-medio;
+        // border-top: solid 1px $cor-dourado-medio;
+        padding: 1.6rem 0;
+        padding-top: 1.02rem;
+
+        &-numero {
+          font-size: 3.32rem;
+          font-weight: 200;
+          letter-spacing: 2px;
+          color: $cor-dourado-claro;
+
+          @include respond(medium-small) {
+            font-size: 2.76rem;
+          }
+        }
+
+        &-titulo {
+          @include respond(medium-small) {
+            font-size: 1.6rem;
+            line-height: 1.3;
+          }
+        }
+
+        &-descricao {
+          @include respond(medium-small) {
+            font-size: 1.33rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use '../abstracts/auxiliares' as*;
+
+.cta {
+  background:
+    radial-gradient(ellipse at 50% 60%,
+      rgba(131, 93, 39, 0.20) 0%,
+      rgba(131, 93, 39, 0.15) 35%,
+      rgba(131, 93, 39, 0.20) 55%,
+      transparent 75%),
+    $cor-preta-claro;
+  padding-top: 3.9rem;
+
+  &__sobretitulo {
+    color: $cor-dourado-claro;
+    letter-spacing: .65rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__container {
+    @include flex($direction: column, $gap: 3.12rem, $align: center);
+    padding: 3.9rem 6.1rem 7.63rem 6.1rem;
+    text-align: center;
+
+    @include respond(small) {
+      @include flex($direction: column);
+      padding: 3.12rem;
+    }
+
+    &-textos {
+      @include flex($direction: column, $gap: 2.5rem);
+      max-width: 75rem;
+
+      & p {
+        @include respond(small) {
+          font-size: 1.33rem
+        }
+      }
+
+      &--botao {
+        & button {
+          @extend %botao-dourado;
+          padding: 1.02rem 2.5rem;
+
+          @include respond(small) {
+            font-size: 1.11rem
+          }
+        }
+
+        & p {
+          font-size: 1.33rem;
+          color: rgba($cor-branca, 0.7);
+
+          @include respond(small) {
+            font-size: 1.12rem
+          }
+        }
+      }
+    }
+  }
+}

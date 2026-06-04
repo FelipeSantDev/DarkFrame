@@ -1,0 +1,85 @@
+@use '../abstracts/auxiliares' as*;
+
+.processo {
+  background: radial-gradient(circle at 20% 30%,
+      rgba(131, 93, 39, 0.1),
+      transparent 50%),
+    $cor-preta-claro;
+
+  &__container {
+    @include flex($gap: 2.5rem);
+    padding: 7.63rem 6.1rem;
+
+    @include respond(medium-small) {
+      @include flex($direction: column-reverse);
+      padding: 3.12rem;
+    }
+
+    &-textos {
+      @include flex($direction: column, $gap: 2rem);
+      flex: 1;
+
+      &--sobtitulo {
+        text-transform: uppercase;
+        font-weight: 200;
+
+        @include respond(medium-small) {
+          text-align: center;
+        }
+      }
+
+      &--titulo {
+        @include respond(medium-small) {
+          font-size: 2.3rem;
+        }
+      }
+
+      &--subtitulo {
+        @include respond(medium-small) {
+          font-size: 1.33rem;
+        }
+      }
+    }
+
+    &-cards {
+      display: flex;
+      flex-flow: column;
+      flex: 1;
+      gap: .52rem;
+
+      &--card {
+        display: flex;
+        flex-flow: column;
+        gap: .52rem;
+        border-bottom: solid 1px $cor-dourado-medio;
+        // border-top: solid 1px $cor-dourado-medio;
+        padding: 1.6rem 0;
+        padding-top: 1.02rem;
+
+        &-numero {
+          font-size: 3.32rem;
+          font-weight: 200;
+          letter-spacing: 2px;
+          color: $cor-dourado-claro;
+
+          @include respond(medium-small) {
+            font-size: 2.76rem;
+          }
+        }
+
+        &-titulo {
+          @include respond(medium-small) {
+            font-size: 1.6rem;
+            line-height: 1.3;
+          }
+        }
+
+        &-descricao {
+          @include respond(medium-small) {
+            font-size: 1.33rem;
+          }
+        }
+      }
+    }
+  }
+}

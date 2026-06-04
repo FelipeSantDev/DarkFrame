@@ -1,0 +1,62 @@
+// Variaveis
+$cor-branca: #fff;
+$cor-cinza-claro: rgba(255, 255, 255, 0.326);
+$cor-cinza-escuro: rgba(0, 0, 0, 0.078);
+$cor-preta-claro: #0a0a0a;
+$cor-preta-medio: #090708;
+$cor-preta: #020202;
+$cor-dourado-mais-claro: #a8732e5a;
+$cor-dourado-claro: #a8742e;
+$cor-dourado-medio: #6E4B1F;
+$cor-dourado-escuro: #835c27;
+
+// Mixins
+@mixin flex($direction: row,
+  $align: stretch,
+  $justify: start,
+  $gap: 0,
+  $wrap: nowrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin respond($tamanho) {
+  @if $tamanho ==small {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+
+  @else if $tamanho ==medium-small {
+    @media (max-width: 43.75em) {
+      @content;
+    }
+  }
+
+  @else if $tamanho ==medium {
+    @media (max-width: 54.375em) {
+      @content;
+    }
+  }
+}
+
+// Placeholder
+%botao-dourado {
+  border-radius: 2rem;
+  padding: 1.02rem 1.6rem;
+  border: 3px solid $cor-dourado-escuro;
+  background-color: $cor-dourado-claro;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: $cor-branca;
+
+  &:hover {
+    background-color: $cor-dourado-escuro;
+    transform: scale(1.03) translateY(-1px);
+  }
+}

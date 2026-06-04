@@ -1,0 +1,33 @@
+@use '../abstracts/auxiliares' as*;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  font-size: 62.5%;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  color: $cor-branca;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}

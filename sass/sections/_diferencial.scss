@@ -1,0 +1,78 @@
+@use '../abstracts/auxiliares' as*;
+
+.diferencial {
+  background:
+    radial-gradient(ellipse at 50% 60%,
+      rgba(131, 93, 39, 0.12) 0%,
+      rgba(131, 93, 39, 0.06) 35%,
+      rgba(131, 93, 39, 0.03) 55%,
+      transparent 75%),
+    $cor-preta-claro;
+
+  &__container {
+    @include flex($direction: column, $gap: 2.5rem);
+    padding: 7.63rem 6.1rem;
+
+    @include respond(small) {
+      @include flex($direction: column);
+      padding: 3.12rem;
+    }
+
+    &-textos {
+      @include flex($direction: column, $gap: 2.5rem, $align: center);
+
+      &--sobtitulo {
+        text-transform: uppercase;
+        font-weight: 200;
+      }
+
+      &--titulo {
+        @include respond(small) {
+          font-size: 2.3rem;
+          text-align: center;
+        }
+      }
+
+      &--descricao {
+        @include flex($direction: column, $gap: .82rem);
+        text-align: center;
+        max-width: 70rem;
+
+        @include respond(small) {
+          font-size: 1.33rem;
+        }
+      }
+    }
+
+    &-cards {
+      @include flex($gap: 3.12rem, $direction: column, $align: center);
+
+      &--card {
+        @include flex($direction: column, $align: center, $gap: 1.6rem);
+        max-width: 45rem;
+        width: 100%;
+        text-align: center;
+        box-shadow: inset 0 0 1rem 0.1rem rgba($cor-dourado-medio, 0.7);
+        border-radius: 2rem;
+        padding: 2rem;
+        transition: all ease 0.3s;
+
+        &:hover {
+          box-shadow: inset 0 0 1rem 0.2rem rgba($cor-dourado-medio, 0.9);
+
+        }
+
+        & svg {
+          color: $cor-dourado-medio;
+
+        }
+
+        & p {
+          @include respond(small) {
+            font-size: 1.33rem;
+          }
+        }
+      }
+    }
+  }
+}
