@@ -1,0 +1,8 @@
+# O site fica na raiz do repositório (index.html, css/, js/, imagens/).
+# O build só recompila o Sass para css/style.css, que já vai versionado.
+[build]
+  command = "npm run build"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
