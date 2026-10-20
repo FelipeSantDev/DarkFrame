@@ -39,8 +39,9 @@
       }
 
       &--botao {
-        & button {
-          @extend %botao-dourado;
+        @include flex($direction: column, $align: center, $gap: 1.2rem);
+
+        & .botao {
           padding: 1.02rem 2.5rem;
 
           @include respond(small) {

@@ -1,61 +1,164 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DarkFrame Studio</title>
-    <link rel="icon" type="image/png" href="imagens/Favicon.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
-      rel="stylesheet"
+    <title>
+      DarkFrame Studio | Sites, landing pages e sistemas web sob medida
+    </title>
+    <meta
+      name="description"
+      content="Sites, landing pages e sistemas web sob medida para negócios locais e empresas em São Paulo. Projetos no ar: SantFlex OS, site da Santflex Assistência Técnica, Flux.TI e mais. Orçamento pelo WhatsApp."
     />
+    <meta name="author" content="Felipe Santos — DarkFrame Studio" />
+    <meta name="theme-color" content="#020202" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="DarkFrame Studio" />
+    <meta
+      property="og:title"
+      content="DarkFrame Studio — sites e sistemas web sob medida"
+    />
+    <meta
+      property="og:description"
+      content="Landing pages, sites para negócios locais e sistemas web que organizam a rotina e geram clientes pelo WhatsApp. Veja os projetos no ar."
+    />
+    <meta property="og:image" content="imagens/og-darkframe.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="imagens/favicon-64.png" />
+    <link rel="apple-touch-icon" href="imagens/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "DarkFrame Studio",
+        "description": "Desenvolvimento de sites, landing pages e sistemas web sob medida.",
+        "founder": { "@type": "Person", "name": "Felipe Santos" },
+        "telephone": "+55 11 97294-2021",
+        "email": "felipesantos-dev@outlook.com.br",
+        "areaServed": "São Paulo, SP",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "sameAs": ["https://github.com/FelipeSantDev"]
+      }
+    </script>
   </head>
   <body>
+    <header class="cabecalho" data-cabecalho>
+      <div class="cabecalho__container">
+        <a href="#inicio" class="cabecalho__logo" aria-label="DarkFrame Studio — início">
+          <img
+            src="imagens/Logo-removebg-preview-copia.webp"
+            alt="DarkFrame Studio"
+            width="140"
+            height="70"
+          />
+        </a>
+
+        <button
+          class="cabecalho__menu-botao"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          data-menu-botao
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="cabecalho__nav" id="menu-principal" data-menu>
+          <a href="#servicos">Serviços</a>
+          <a href="#portfolio">Projetos</a>
+          <a href="#processo">Processo</a>
+          <a href="#sobre">Sobre</a>
+          <a
+            class="cabecalho__nav-botao"
+            href="https://wa.me/5511972942021?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20DarkFrame%20e%20quero%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener"
+            >Pedir orçamento</a
+          >
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <section class="hero">
-        <img
-          class="hero__logo"
-          src="imagens/Logo-removebg-preview-copia.webp"
-          alt="Logo Hero"
-        />
+      <section class="hero" id="inicio">
         <div class="hero__container">
           <div class="hero__container-textos">
-            <p>
-              Atendimento para fotógrafos da Zona Sul • São Caetano • Santo
-              André
+            <p class="hero__tag">
+              Sites • Landing pages • Sistemas web — São Paulo
             </p>
             <div class="hero__container-titulos">
               <h1>
-                Eleve sua imagem profissional com uma vitrine digital à altura
-                do seu talento.
+                Sites e sistemas que fazem o seu negócio
+                <span>vender e funcionar melhor.</span>
               </h1>
               <p>
-                Criamos landing pages sofisticadas que destacam seu trabalho,
-                fortalecem sua autoridade e geram contatos diretos via WhatsApp.
+                Da landing page que gera contatos pelo WhatsApp ao sistema que
+                organiza a rotina da sua empresa: projetos sob medida, rápidos,
+                feitos para o celular e pensados para dar resultado.
               </p>
             </div>
           </div>
 
           <div class="hero__container-botao">
-            <a href="https://wa.me/5511972942021" target="_blank"
-              ><button>Fale com a DarkFrame</button></a
+            <a class="botao botao--dourado" href="#portfolio">Ver projetos</a>
+            <a
+              class="botao botao--contorno"
+              href="https://wa.me/5511972942021?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20DarkFrame%20e%20quero%20um%20or%C3%A7amento."
+              target="_blank"
+              rel="noopener"
+              >Fale no WhatsApp</a
             >
           </div>
 
-          <div class="hero__container-mockup">
-            <img src="imagens/Mockup-Hero.webp" alt="Mockup Hero" />
+          <ul class="hero__numeros">
+            <li><strong>5</strong><span>projetos publicados</span></li>
+            <li><strong>2</strong><span>sistemas em uso diário</span></li>
+            <li><strong>100%</strong><span>responsivos para celular</span></li>
+          </ul>
+
+          <div class="hero__container-mockup" aria-hidden="true">
+            <div class="janela hero__janela">
+              <div class="janela__barra">
+                <i></i><i></i><i></i>
+                <p>santflex.web.app</p>
+              </div>
+              <img
+                src="imagens/projetos/santflex-os-painel.webp"
+                alt=""
+                width="1440"
+                height="900"
+              />
+            </div>
+            <img
+              class="celular hero__celular"
+              src="imagens/projetos/santflex-site-celular.webp"
+              alt=""
+              width="390"
+              height="844"
+            />
           </div>
         </div>
       </section>
@@ -63,131 +166,444 @@
       <section class="problema">
         <div class="problema__container">
           <div class="problema__container-textos" data-reveal data-delay="0">
-            <p class="problema__container-textos--sobtitulo">Diagnostico</p>
+            <p class="problema__container-textos--sobtitulo">Diagnóstico</p>
             <h2 class="problema__container-textos--titulo">
-              Seu trabalho pode ser premium. Sua presença digital precisa
+              Seu negócio pode ser excelente. A presença digital precisa
               mostrar isso.
             </h2>
             <p class="problema__container-textos--subtitulo">
-              Muitos fotógrafos talentosos perdem oportunidades não por falta de
-              qualidade, mas por falta de uma apresentação organizada e
-              convincente fora do Instagram.
+              Muita empresa boa perde clientes e tempo não por falta de
+              qualidade, mas porque depende só do Instagram, de mensagens
+              soltas e de controles no papel.
             </p>
           </div>
 
           <div class="problema__container-cards">
-            <div
-              class="problema__container-cards--card"
-              data-reveal
-              data-delay="300"
-            >
+            <div class="problema__container-cards--card" data-reveal data-delay="300">
               <p class="problema__container-cards--card-numero">01</p>
               <h3 class="problema__container-cards--card-titulo">
-                Conversas que não avançam
+                O cliente procura e não encontra
               </h3>
               <p class="problema__container-cards--card-descricao">
-                Clientes demonstram interesse, mas não encontram informações
-                claras o suficiente para tomar uma decisão.
+                Sem um site claro, quem pesquisa no Google não descobre o que
+                você faz, onde atende e por que confiar — e fecha com o
+                concorrente.
               </p>
             </div>
 
-            <div
-              class="problema__container-cards--card"
-              data-reveal
-              data-delay="450"
-            >
+            <div class="problema__container-cards--card" data-reveal data-delay="450">
               <p class="problema__container-cards--card-numero">02</p>
               <h3 class="problema__container-cards--card-titulo">
-                Percepção de valor abaixo do seu nível
+                Conversas que não viram venda
               </h3>
               <p class="problema__container-cards--card-descricao">
-                Sem uma apresentação estruturada, seu trabalho pode parecer
-                comum aos olhos de quem ainda não conhece sua qualidade. A forma
-                como você se posiciona influencia diretamente o quanto o cliente
-                está disposto a investir.
+                O interessado chama no WhatsApp, mas faltam informações para
+                ele decidir. Uma página bem estruturada responde antes e entrega
+                o contato pronto para fechar.
               </p>
             </div>
 
-            <div
-              class="problema__container-cards--card"
-              data-reveal
-              data-delay="600"
-            >
+            <div class="problema__container-cards--card" data-reveal data-delay="600">
               <p class="problema__container-cards--card-numero">03</p>
               <h3 class="problema__container-cards--card-titulo">
-                Dependência total do Instagram
+                Rotina presa em caderno e planilha
               </h3>
               <p class="problema__container-cards--card-descricao">
-                Quando todas as informações estão dispersas ou limitadas a uma
-                única plataforma, você perde controle sobre sua narrativa.
-                Autoridade se constrói com clareza, organização e direção
-                estratégica.
+                Pedidos, chamados e valores espalhados geram retrabalho e
+                prejuízo. Um sistema sob medida coloca tudo num só lugar, no
+                computador e no celular.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="servicos" id="servicos">
+        <div class="servicos__textos" data-reveal>
+          <p class="sobretitulo">Serviços</p>
+          <h2>O que a DarkFrame pode construir para você</h2>
+          <p>
+            Cada projeto é desenvolvido do zero, com código próprio, foco em
+            velocidade e no que realmente importa para o seu negócio.
+          </p>
+        </div>
+
+        <div class="servicos__cards">
+          <article class="servicos__card" data-reveal data-delay="100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z" />
+            </svg>
+            <h3>Landing pages</h3>
+            <p>
+              Páginas de venda e de apresentação com narrativa estratégica,
+              feitas para converter visitas em contatos e testes do seu
+              produto.
+            </p>
+          </article>
+
+          <article class="servicos__card" data-reveal data-delay="200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+            </svg>
+            <h3>Sites para negócios locais</h3>
+            <p>
+              Sites institucionais com SEO local, serviços bem explicados e
+              orçamento direto pelo WhatsApp, para ser encontrado por quem está
+              perto.
+            </p>
+          </article>
+
+          <article class="servicos__card" data-reveal data-delay="300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v9a1.5 1.5 0 0 1-1.5 1.5H10l.5 2H12a.5.5 0 0 1 0 1H4a.5.5 0 0 1 0-1h1.5l.5-2H1.5A1.5 1.5 0 0 1 0 10.5zM1.5 1a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm2 2h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1m0 2h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1" />
+            </svg>
+            <h3>Sistemas web sob medida</h3>
+            <p>
+              Painéis de gestão, ordens de serviço, chamados, estoque e
+              financeiro — com login, dados na nuvem e atualização em tempo
+              real.
+            </p>
+          </article>
+
+          <article class="servicos__card" data-reveal data-delay="400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+            </svg>
+            <h3>Apps instaláveis (PWA)</h3>
+            <p>
+              Seu sistema com ícone na tela do celular, sem passar pela loja de
+              aplicativos, integrado a WhatsApp, QR code e links de pagamento.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio__cabecalho" data-reveal>
+          <p class="sobretitulo">Portfólio</p>
+          <h2 class="portfolio__titulo">Projetos reais, no ar e em uso.</h2>
+          <p class="portfolio__subtitulo">
+            Sistemas que organizam a operação e páginas que geram clientes.
+            Clique para ver cada projeto funcionando.
+          </p>
+        </div>
+
+        <div class="portfolio__lista">
+          <!-- SantFlex OS -->
+          <article class="projeto" data-reveal>
+            <div class="projeto__midia">
+              <div class="janela">
+                <div class="janela__barra">
+                  <i></i><i></i><i></i>
+                  <p>SantFlex OS — painel</p>
+                </div>
+                <img
+                  src="imagens/projetos/santflex-os-painel.webp"
+                  alt="Painel do SantFlex OS com ordens em aberto, recebido e lucro do mês"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <img
+                class="celular projeto__celular"
+                src="imagens/projetos/santflex-os-celular.webp"
+                alt="SantFlex OS aberto no celular"
+                width="390"
+                height="844"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="projeto__textos">
+              <p class="projeto__tag">Sistema web · Produto próprio</p>
+              <h3>
+                SantFlex OS — <span>gestão completa para assistências técnicas</span>
+              </h3>
+              <p>
+                Sistema de ordens de serviço criado a partir da rotina real de
+                bancada: o aparelho entra com fotos, testes e assinatura do
+                cliente, o orçamento sai calculado e o cliente acompanha o
+                conserto pelo celular — sem precisar perguntar.
+              </p>
+              <ul class="projeto__lista">
+                <li>OS com fotos, testes de entrada e saída e assinatura digital</li>
+                <li>Link de acompanhamento para o cliente e avisos pelo WhatsApp</li>
+                <li>Calculadora de preço, sinal e link de pagamento</li>
+                <li>Estoque, revenda de aparelhos, agenda e financeiro com lucro do mês</li>
+              </ul>
+              <ul class="projeto__stack" aria-label="Tecnologias">
+                <li>JavaScript</li>
+                <li>Firebase</li>
+                <li>PWA</li>
+                <li>IndexedDB</li>
+              </ul>
+              <div class="projeto__botoes">
+                <a class="botao botao--dourado" href="https://santflex.web.app/demo/" target="_blank" rel="noopener">Testar demonstração</a>
+                <a class="botao botao--contorno" href="https://santflex.web.app/assistencias/" target="_blank" rel="noopener">Página do produto</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Página de vendas SantFlex OS -->
+          <article class="projeto projeto--invertido" data-reveal>
+            <div class="projeto__midia">
+              <div class="janela">
+                <div class="janela__barra">
+                  <i></i><i></i><i></i>
+                  <p>santflex.web.app/assistencias</p>
+                </div>
+                <img
+                  src="imagens/projetos/santflex-os-pagina.webp"
+                  alt="Página de vendas do SantFlex OS: Da entrada do aparelho ao lucro do mês, num só lugar"
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div class="projeto__textos">
+              <p class="projeto__tag">Landing page · Lançamento de produto</p>
+              <h3>
+                Página de vendas do SantFlex OS — <span>da visita ao teste grátis</span>
+              </h3>
+              <p>
+                Landing page para divulgar o sistema a outros técnicos:
+                começa pelas dores da bancada, mostra cada recurso com prints
+                reais, apresenta os planos e leva o visitante direto para a
+                demonstração ou para o WhatsApp.
+              </p>
+              <ul class="projeto__lista">
+                <li>Texto guiado pelas dores do público: OS no caderno, cliente cobrando, lucro no escuro</li>
+                <li>Recursos apresentados com prints reais do sistema</li>
+                <li>Planos e chamada para a demonstração sem cadastro</li>
+                <li>SEO e prévia de link pronta para compartilhar</li>
+              </ul>
+              <ul class="projeto__stack" aria-label="Tecnologias">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Firebase Hosting</li>
+              </ul>
+              <div class="projeto__botoes">
+                <a class="botao botao--dourado" href="https://santflex.web.app/assistencias/" target="_blank" rel="noopener">Ver página</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Site Santflex Assistência -->
+          <article class="projeto" data-reveal>
+            <div class="projeto__midia">
+              <div class="janela">
+                <div class="janela__barra">
+                  <i></i><i></i><i></i>
+                  <p>santflex.web.app</p>
+                </div>
+                <img
+                  src="imagens/projetos/santflex-site.webp"
+                  alt="Site da Santflex Assistência Técnica: Celular ou notebook com problema? A gente resolve."
+                  width="1440"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <img
+                class="celular projeto__celular"
+                src="imagens/projetos/santflex-site-celular.webp"
+                alt="Site da Santflex no celular"
+                width="390"
+                height="844"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="projeto__textos">
+              <p class="projeto__tag">Site institucional · Negócio local</p>
+              <h3>
+                Santflex Assistência Técnica — <span>orçamentos que chegam prontos no WhatsApp</span>
+              </h3>
+              <p>
+                Site da assistência de celulares e computadores no Sacomã (SP),
+                pensado para quem chega pelo Google com o aparelho quebrado:
+                serviços claros, garantia em destaque e um montador de mensagem
+                que entrega o pedido de orçamento pronto.
+              </p>
+              <ul class="projeto__lista">
+                <li>Montador de orçamento: o cliente escolhe o problema e a mensagem sai pronta</li>
+                <li>Consertos realizados com antes e depois</li>
+                <li>Perguntas frequentes e garantia de 90 dias em destaque</li>
+                <li>SEO local com sitemap e Google Search Console</li>
+              </ul>
+              <ul class="projeto__stack" aria-label="Tecnologias">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Firebase Hosting</li>
+              </ul>
+              <div class="projeto__botoes">
+                <a class="botao botao--dourado" href="https://santflex.web.app/" target="_blank" rel="noopener">Ver site</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Flux.TI -->
+          <article class="projeto projeto--invertido" data-reveal>
+            <div class="projeto__midia">
+              <div class="janela">
+                <div class="janela__barra">
+                  <i></i><i></i><i></i>
+                  <p>Flux.TI — chamados</p>
+                </div>
+                <img
+                  src="imagens/projetos/flux-ti.webp"
+                  alt="Ilustração do painel do Flux.TI com chamados de TI, equipamentos e Chromebooks emprestados"
+                  width="1440"
+                  height="740"
+                  loading="lazy"
+                />
+              </div>
+              <p class="projeto__legenda">
+                Sistema interno com acesso restrito. Imagem ilustrativa, com
+                dados fictícios.
+              </p>
+            </div>
+
+            <div class="projeto__textos">
+              <p class="projeto__tag">Sistema web · Educação</p>
+              <h3>
+                Flux.TI — <span>central de TI e manutenção para escolas</span>
+              </h3>
+              <p>
+                Sistema em uso diário numa escola particular com duas unidades.
+                Trocou planilhas e mensagens soltas por um só lugar para
+                inventário, chamados e empréstimo de Chromebooks: professores
+                abrem chamados pelo celular em segundos e a equipe acompanha
+                tudo em tempo real.
+              </p>
+              <ul class="projeto__lista">
+                <li>Inventário com patrimônio, etiquetas QR code e checklist diário</li>
+                <li>Chamados de TI e de manutenção predial, com fotos e aviso pelo WhatsApp</li>
+                <li>Agenda e entregas de Chromebooks com conferência de devolução</li>
+                <li>Dashboards e análise de gastos com manutenção</li>
+              </ul>
+              <ul class="projeto__stack" aria-label="Tecnologias">
+                <li>JavaScript</li>
+                <li>Firebase</li>
+                <li>PWA</li>
+                <li>Google Apps Script</li>
+              </ul>
+              <div class="projeto__botoes">
+                <a
+                  class="botao botao--dourado"
+                  href="https://wa.me/5511972942021?text=Ol%C3%A1%2C%20Felipe!%20Vi%20o%20Flux.TI%20no%20seu%20portf%C3%B3lio%20e%20quero%20saber%20mais."
+                  target="_blank"
+                  rel="noopener"
+                  >Quero um sistema assim</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Soulight by AA -->
+          <article class="projeto" data-reveal>
+            <div class="projeto__midia projeto__midia--mockup">
+              <img
+                src="imagens/projetos/soul-light.webp"
+                alt="Landing page de fotografia Soulight by AA em um notebook"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="projeto__textos">
+              <p class="projeto__tag">Landing page · Fotografia</p>
+              <h3>
+                Soulight by AA — <span>presença digital para fotografia de casamentos</span>
+              </h3>
+              <p>
+                Landing page desenvolvida para fortalecer o posicionamento,
+                organizar o portfólio com narrativa estratégica e conduzir o
+                visitante até o agendamento de forma natural.
+              </p>
+              <ul class="projeto__lista">
+                <li>Estrutura orientada à conversão</li>
+                <li>Narrativa visual para múltiplos serviços</li>
+                <li>Integração estratégica com WhatsApp</li>
+              </ul>
+              <ul class="projeto__stack" aria-label="Tecnologias">
+                <li>HTML5</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>Netlify</li>
+              </ul>
+              <div class="projeto__botoes">
+                <a class="botao botao--dourado" href="https://souligthbyaa.netlify.app/" target="_blank" rel="noopener">Ver projeto</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="processo" id="processo">
         <div class="processo__container">
           <div class="processo__container-cards">
-            <div
-              class="processo__container-cards--card"
-              data-reveal
-              data-delay="300"
-            >
+            <div class="processo__container-cards--card" data-reveal data-delay="300">
               <p class="processo__container-cards--card-numero">01</p>
               <h3 class="processo__container-cards--card-titulo">
-                Diagnóstico estratégico
+                Diagnóstico do negócio
               </h3>
               <p class="processo__container-cards--card-descricao">
-                Entendemos seu público, seus diferenciais e o posicionamento que
-                você deseja construir. Antes do layout, existe direção.
+                Entendemos seu público, sua rotina e onde você perde clientes ou
+                tempo. Antes do layout, existe direção.
               </p>
             </div>
 
-            <div
-              class="processo__container-cards--card"
-              data-reveal
-              data-delay="450"
-            >
+            <div class="processo__container-cards--card" data-reveal data-delay="450">
               <p class="processo__container-cards--card-numero">02</p>
               <h3 class="processo__container-cards--card-titulo">
-                Estrutura orientada à conversão
+                Estrutura e protótipo
               </h3>
               <p class="processo__container-cards--card-descricao">
-                Organizamos suas informações de forma clara e estratégica,
-                conduzindo o visitante até a decisão com confiança.
+                Organizamos conteúdo e telas de forma clara, conduzindo o
+                visitante — ou a sua equipe — até a ação certa.
               </p>
             </div>
 
-            <div
-              class="processo__container-cards--card"
-              data-reveal
-              data-delay="600"
-            >
+            <div class="processo__container-cards--card" data-reveal data-delay="600">
               <p class="processo__container-cards--card-numero">03</p>
-              <h3 class="problema__container-cards--card-titulo">
-                Design que comunica valor
+              <h3 class="processo__container-cards--card-titulo">
+                Design e desenvolvimento
               </h3>
               <p class="processo__container-cards--card-descricao">
-                Criamos uma experiência visual sofisticada que transmite
-                autoridade, aumenta percepção de valor e diferencia você no
-                mercado.
+                Visual que transmite confiança e código próprio, rápido e
+                responsivo, testado no computador e no celular.
+              </p>
+            </div>
+
+            <div class="processo__container-cards--card" data-reveal data-delay="750">
+              <p class="processo__container-cards--card-numero">04</p>
+              <h3 class="processo__container-cards--card-titulo">
+                Publicação e evolução
+              </h3>
+              <p class="processo__container-cards--card-descricao">
+                Colocamos no ar com domínio, SEO e prévia para WhatsApp — e
+                seguimos ajustando a partir do uso real.
               </p>
             </div>
           </div>
 
           <div class="processo__container-textos" data-reveal data-delay="0">
-            <p class="processo__container-textos--sobtitulo">METODOLOGIA</p>
+            <p class="processo__container-textos--sobtitulo">Metodologia</p>
             <h2 class="processo__container-textos--titulo">
-              Como transformamos seu trabalho em uma presença digital premium
+              Como transformamos uma ideia em um projeto que dá resultado
             </h2>
             <p class="processo__container-textos--subtitulo">
               Antes de qualquer decisão visual, existe estratégia. Cada projeto
-              é estruturado para posicionar você com clareza, autoridade e
-              percepção de valor — muito além de simplesmente 'ter um site
-              bonito'.
+              é estruturado para resolver um problema real do seu negócio —
+              muito além de simplesmente "ter um site bonito".
             </p>
           </div>
         </div>
@@ -195,283 +611,107 @@
 
       <section class="diferencial">
         <div class="diferencial__container">
-          <div class="diferencial__container-textos">
+          <div class="diferencial__container-textos" data-reveal>
             <p class="diferencial__container-textos--sobtitulo">Diferencial</p>
             <h2 class="diferencial__container-textos--titulo">
-              Não criamos páginas. Construímos percepção de valor.
+              Não entregamos só páginas. Construímos ferramentas de trabalho.
             </h2>
             <div class="diferencial__container-textos--descricao">
               <p>
-                Criar uma landing page vai além de organizar textos e imagens. É
-                construir narrativa, direcionar decisões e transmitir autoridade
-                em cada detalhe.
-              </p>
-              <p>
-                Cada projeto é estruturado para posicionar você com clareza,
-                fortalecer sua autoridade e transformar visitas em oportunidades
-                reais.
+                Os sistemas do portfólio nasceram de problemas reais e são
+                usados todos os dias. É essa experiência de quem está na
+                operação que vai para cada projeto.
               </p>
             </div>
           </div>
 
           <div class="diferencial__container-cards">
-            <div class="diferencial__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"
-                />
-                <path
-                  d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"
-                />
-              </svg>
-              <h3>Posicionamento estratégico</h3>
-              <p>
-                Cada detalhe da sua página é pensado para comunicar autoridade,
-                exclusividade e direcionamento claro. Não é sobre estética
-                isolada — é sobre percepção de valor.
-              </p>
-            </div>
-
-            <div class="diferencial__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
-                />
-              </svg>
-              <h3>Experiência que conduz decisões</h3>
-              <p>
-                Organizamos informações de forma estratégica para guiar o
-                visitante com clareza, reduzindo objeções e aumentando a
-                confiança no seu trabalho.
-              </p>
-            </div>
-
-            <div class="diferencial__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"
-                />
-              </svg>
-              <h3>Design alinhado ao seu nível</h3>
-              <p>
-                Criamos uma presença digital que reflete o padrão premium do seu
-                trabalho, fortalecendo sua imagem e diferenciando você no
-                mercado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio" id="portfolio">
-        <p class="portfolio__sobtitulo">Portfólio</p>
-
-        <h2 class="portfolio__titulo">Projetos que posicionam e convertem.</h2>
-
-        <p class="portfolio__subtitulo">
-          "Cada landing page é estruturada estrategicamente para elevar sua
-          percepção de valor e gerar contatos qualificados."
-        </p>
-
-        <div class="portfolio__carrossel" data-carrossel>
-          <!-- <button
-            class="portfolio__nav portfolio__nav--prev"
-            type="button"
-            data-carrossel-prev
-            aria-label="Projeto anterior"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"
-              />
-            </svg>
-          </button> -->
-
-          <div class="portfolio__janela" data-carrossel-janela>
-            <div class="portfolio__faixa" data-carrossel-faixa>
-              <article class="portfolio__deslizar" data-carrossel-deslizar>
-                <div class="portfolio__container">
-                  <div class="portfolio__container--textos">
-                    <p class="portfolio__container--textos-tag">
-                      CASE REAL · FOTOGRAFIA PROFISSIONAL
-                    </p>
-
-                    <div class="portfolio__container--textos-titulos">
-                      <h3>
-                        Presença digital estratégica para fotógrafos que
-                        <span> valorizam posicionamento </span>
-                      </h3>
-                      <p>
-                        Landing page desenvolvida para fortalecer
-                        posicionamento, organizar portfólio com narrativa
-                        estratégica e conduzir o visitante até o agendamento de
-                        forma natural e direcionada.
-                      </p>
-                    </div>
-
-                    <div class="portfolio__container--textos-bullets">
-                      <p>• Estrutura orientada à conversão</p>
-                      <p>• Narrativa visual para múltiplos serviços</p>
-                      <p>• Integração estratégica com WhatsApp</p>
-                    </div>
-
-                    <a href="https://souligthbyaa.netlify.app/"
-                      ><button type="button">Ver projeto completo</button></a
-                    >
-                  </div>
-
-                  <div class="portfolio__container--mockup">
-                    <img src="imagens/mockup pagina guto.webp" alt="Mockup" />
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- <button
-            class="portfolio__nav portfolio__nav--proximo"
-            type="button"
-            data-carrossel-proximo
-            aria-label="Próximo projeto"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              fill="currentColor"
-              class="bi bi-caret-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
-              />
-            </svg>
-          </button> -->
-        </div>
-      </section>
-
-      <section class="posicionamento" id="posicionamento">
-        <p class="posicionamento__sobtitulo">Posicionamento</p>
-        <div class="posicionamento__container">
-          <div class="posicionamento__container--textos">
-            <h2>
-              Não criamos apenas páginas. <br />Construímos presença digital
-              estratégica.
-            </h2>
-            <p>
-              Cada projeto é pensado para elevar percepção, transmitir confiança
-              e conduzir o visitante à decisão com naturalidade.
-            </p>
-          </div>
-
-          <div class="posicionamento__container-cards">
-            <div class="posicionamento__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-                />
-                <path
-                  d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
-                />
-                <path
-                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"
-                />
-                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+            <div class="diferencial__container-cards--card" data-reveal data-delay="100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0" />
+                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
               </svg>
               <h3>Estratégia antes do design</h3>
               <p>
-                Não começamos pelo visual. Começamos pelo posicionamento.
-                Entendemos seu público, seu diferencial e o perfil de cliente
-                que você deseja atrair.
+                Começamos pelo seu público e pelo seu processo. Cada tela tem um
+                objetivo: gerar contato, agilizar a rotina ou mostrar resultado.
               </p>
             </div>
 
-            <div class="posicionamento__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
-                />
+            <div class="diferencial__container-cards--card" data-reveal data-delay="200">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
               </svg>
-              <h3>Estética alinhada ao seu valor</h3>
+              <h3>Feito para o celular</h3>
               <p>
-                O design não é decoração. É percepção. Cada elemento visual
-                reforça profissionalismo, organização e autoridade.
+                Seu cliente e sua equipe usam o celular. Tudo é pensado primeiro
+                para a tela pequena, leve e rápido mesmo no 4G.
               </p>
             </div>
 
-            <div class="posicionamento__container-cards--card">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z"
-                />
+            <div class="diferencial__container-cards--card" data-reveal data-delay="300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z" />
               </svg>
-              <h3>Conversão como prioridade</h3>
+              <h3>Código próprio, sem mensalidade de plataforma</h3>
               <p>
-                Toda estrutura é construída para conduzir o visitante à ação.
-                Menos distração. Mais clareza. Mais resultado.
+                Nada de construtor de sites engessado. Você recebe um projeto
+                sob medida, hospedado com custo baixo ou zero.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="sobre__container" data-reveal>
+          <div class="sobre__marca" aria-hidden="true">
+            <img src="imagens/Logo-removebg-preview-copia.webp" alt="" width="260" height="130" loading="lazy" />
+          </div>
+          <div class="sobre__textos">
+            <p class="sobretitulo">Quem está por trás</p>
+            <h2>Felipe Santos</h2>
+            <p>
+              Desenvolvedor web e técnico em TI, à frente da DarkFrame Studio.
+              Trabalho na prática com suporte, manutenção e atendimento — e é
+              daí que saem os meus sistemas: o Flux.TI nasceu da rotina de TI de
+              uma escola, e o SantFlex OS da minha própria bancada de assistência
+              técnica.
+            </p>
+            <p>
+              Por isso cada projeto é pensado para quem vai usar de verdade:
+              simples de operar, rápido no celular e focado em trazer clientes
+              ou economizar tempo.
+            </p>
+            <div class="sobre__links">
+              <a href="https://github.com/FelipeSantDev" target="_blank" rel="noopener">GitHub</a>
+              <a href="mailto:felipesantos-dev@outlook.com.br">E-mail</a>
+              <a href="https://wa.me/5511972942021" target="_blank" rel="noopener">WhatsApp</a>
             </div>
           </div>
         </div>
       </section>
 
       <section class="cta">
-        <p class="cta__sobretitulo">Decisão</p>
+        <p class="cta__sobretitulo">Próximo passo</p>
 
         <div class="cta__container">
-          <div class="cta__container-textos">
-            <h2>Sua presença digital está no mesmo nível do seu talento?</h2>
+          <div class="cta__container-textos" data-reveal>
+            <h2>Seu negócio está no digital do jeito que merece?</h2>
             <p>
-              Se você deseja ser percebido como referência, atrair clientes que
-              valorizam seu trabalho e construir autoridade além do Instagram, o
-              próximo passo é estratégico.
+              Se você quer ser encontrado, receber contatos qualificados ou
+              tirar a rotina do caderno e da planilha, vamos conversar sobre o
+              seu projeto.
             </p>
 
             <div class="cta__container-textos--botao">
-              <a href="https://wa.me/5511972942021" target="_blank"
-                ><button>Agendar diagnóstico estratégico</button></a
+              <a
+                class="botao botao--dourado"
+                href="https://wa.me/5511972942021?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20DarkFrame%20e%20quero%20um%20or%C3%A7amento."
+                target="_blank"
+                rel="noopener"
+                >Pedir orçamento pelo WhatsApp</a
               >
 
               <p>Conversa direta. Sem compromisso. Resposta em até 24 horas.</p>
@@ -486,13 +726,14 @@
         <div class="rodape__container-imgs">
           <img
             src="imagens/Logo-removebg-preview-copia.webp"
-            alt="Logo"
+            alt="DarkFrame Studio"
             class="rodape__container-imagem"
+            loading="lazy"
           />
           <div class="rodape__container-textos">
             <p>
-              Presença digital estratégica para profissionais que desejam ser
-              percebidos como referência.
+              Sites, landing pages e sistemas web sob medida para negócios que
+              querem crescer.
             </p>
 
             <p>São Paulo — Brasil</p>
@@ -502,36 +743,48 @@
         <div class="rodape__container-navegacao">
           <p class="rodape__container-navegacao--nav">Navegação</p>
           <div class="rodape__container-navegacao--nav-comandos">
+            <a href="#servicos">Serviços</a>
             <a href="#portfolio">Projetos</a>
             <a href="#processo">Processo</a>
-            <a href="#posicionamento">Posicionamento</a>
+            <a href="#sobre">Sobre</a>
           </div>
         </div>
 
         <div class="rodape__container-contato">
           <p class="rodape__container-contato-cont">Contato</p>
           <div class="rodape__container-contato-links">
-            <p class="rodape__container-contato--whatsapp">
+            <p>
               WhatsApp:
-              <a href="https://wa.me/5511972942021" target="_blank"
-                >(11)97294-2021</a
-              >
+              <a href="https://wa.me/5511972942021" target="_blank" rel="noopener">(11) 97294-2021</a>
             </p>
-            <p class="rodape__container-contato--email" target="_blank">
-              Email:
-              <a href="mailto:felipesantos-dev@outlook.com.br"
-                >felipesantos-dev@outlook.com.br</a
-              >
+            <p>
+              E-mail:
+              <a href="mailto:felipesantos-dev@outlook.com.br">felipesantos-dev@outlook.com.br</a>
             </p>
-            <!-- <p class="rodape__container-contato--intagram">Instagram</p> -->
+            <p>
+              GitHub:
+              <a href="https://github.com/FelipeSantDev" target="_blank" rel="noopener">FelipeSantDev</a>
+            </p>
           </div>
         </div>
         <div class="linha"></div>
       </div>
       <div class="copyrigth">
-        © 2026 DarkFrame Desenvolvido com estratégia. Não apenas código.
+        © <span data-ano>2026</span> DarkFrame Studio · Desenvolvido com estratégia. Não apenas código.
       </div>
     </footer>
+
+    <a
+      class="whatsapp-flutuante"
+      href="https://wa.me/5511972942021?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20da%20DarkFrame%20e%20quero%20um%20or%C3%A7amento."
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+      </svg>
+    </a>
 
     <script src="js/script.js"></script>
   </body>

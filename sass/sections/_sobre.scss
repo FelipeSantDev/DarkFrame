@@ -1,0 +1,67 @@
+@use '../abstracts/auxiliares' as*;
+
+.sobre {
+  padding: 7.63rem 6.1rem;
+  background: $cor-preta;
+
+  @include respond(medium-small) {
+    padding: 5rem 2rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 6rem;
+    max-width: 110rem;
+    margin: 0 auto;
+
+    @include respond(medium) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  &__marca {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid rgba($cor-dourado-claro, 0.35);
+    background: radial-gradient(circle, rgba($cor-dourado-medio, 0.25), transparent 70%);
+    padding: 4rem;
+
+    @include respond(medium) {
+      max-width: 24rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__textos {
+    @include flex($direction: column, $gap: 1.6rem);
+
+    & > p:not(.sobretitulo) {
+      color: rgba($cor-branca, 0.8);
+
+      @include respond(medium-small) {
+        font-size: 1.45rem;
+      }
+    }
+  }
+
+  &__links {
+    @include flex($gap: 2.4rem, $wrap: wrap);
+    margin-top: 0.8rem;
+
+    & a {
+      color: $cor-dourado-claro;
+      text-decoration: none;
+      border-bottom: 1px solid rgba($cor-dourado-claro, 0.4);
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: $cor-dourado-claro;
+      }
+    }
+  }
+}

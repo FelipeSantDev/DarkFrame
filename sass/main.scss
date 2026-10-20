@@ -4,15 +4,18 @@
 
 // 2. Base stuff
 @use 'base/base';
+@use 'base/componentes';
 
 // 3. Layout-related
+@use 'layout/header';
 @use 'layout/footer';
 
 // 4. Sections
 @use 'sections/hero';
 @use 'sections/problema';
+@use 'sections/servicos';
+@use 'sections/portfolio';
 @use 'sections/processo';
 @use 'sections/diferencial';
-@use 'sections/portfolio';
-@use 'sections/posicionamento';
+@use 'sections/sobre';
 @use 'sections/cta';

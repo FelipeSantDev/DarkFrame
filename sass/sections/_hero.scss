@@ -1,82 +1,62 @@
 @use '../abstracts/auxiliares' as*;
 
 .hero {
-  background-color: $cor-preta;
-
-  &__logo {
-    width: 17rem;
-    height: auto;
-    left: 6rem;
-    position: sticky;
-
-    @include respond(medium-small) {
-      width: 15rem;
-      height: auto;
-      left: 3rem;
-      position: sticky;
-    }
-  }
+  background:
+    radial-gradient(ellipse at 80% 40%, rgba(131, 93, 39, 0.22), transparent 55%),
+    $cor-preta;
+  overflow: hidden;
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem 1.6rem;
-    padding: 7.63rem 6.1rem;
-    padding-top: 3.9rem;
+    grid-template-columns: 1fr 1.1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 3rem 5rem;
+    padding: 6rem 6.1rem 8rem;
+    max-width: 144rem;
+    margin: 0 auto;
 
-    @include respond(medium-small) {
-      @include flex($direction: column, $gap: 2.5rem);
-      padding: 3.12rem;
+    @include respond(medium) {
+      @include flex($direction: column, $gap: 3rem);
+      padding: 4rem 2rem 6rem;
     }
 
     &-textos {
-      @include flex($direction: column, $gap: 1.02rem);
+      @include flex($direction: column, $gap: 1.6rem);
+      align-self: end;
 
       & h1 {
-        @include respond(medium-small) {
-          font-size: 2.76rem;
-        }
-      }
+        font-size: clamp(3.2rem, 4.4vw, 5.4rem);
 
-      & p:first-child {
-        font-size: 1.11rem;
-
-        @include respond(medium-small) {
-          font-size: .92rem;
-        }
-      }
-
-      & p:last-child {
-        width: 95%;
-
-        @include respond(medium-small) {
-          font-size: 1.33rem;
+        & span {
+          color: $cor-dourado-claro;
         }
       }
     }
 
     &-titulos {
       display: grid;
-      gap: 1.6rem;
-    }
+      gap: 2rem;
 
+      & p {
+        max-width: 56rem;
+        color: rgba($cor-branca, 0.8);
+
+        @include respond(medium-small) {
+          font-size: 1.5rem;
+        }
+      }
+    }
 
     &-botao {
       grid-column: 1;
       grid-row: 2;
+      @include flex($gap: 1.4rem, $wrap: wrap);
 
       @include respond(medium-small) {
-        align-self: center;
+        @include flex($direction: column, $gap: 1.2rem);
         width: 100%;
 
-      }
-
-      & button {
-        @extend %botao-dourado;
-
-        @include respond(medium-small) {
-          padding: 1.28rem 1.6rem;
-          border-radius: 3rem;
+        & .botao {
           width: 100%;
         }
       }
@@ -85,6 +65,70 @@
     &-mockup {
       grid-column: 2;
       grid-row: 1 / 4;
+      align-self: center;
+      position: relative;
+      padding: 0 4rem 4rem 0;
+
+      @include respond(medium) {
+        padding: 0 3rem 3rem 0;
+      }
     }
+  }
+
+  &__tag {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $cor-dourado-claro;
+  }
+
+  &__numeros {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+    list-style: none;
+    @include flex($gap: 3.6rem, $wrap: wrap);
+    padding-top: 2.4rem;
+    border-top: 1px solid rgba($cor-dourado-claro, 0.25);
+
+    @include respond(medium-small) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      width: 100%;
+    }
+
+    & li {
+      @include flex($direction: column);
+      max-width: 14rem;
+    }
+
+    & strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      color: $cor-dourado-claro;
+      line-height: 1.1;
+
+      @include respond(medium-small) {
+        font-size: 2.6rem;
+      }
+    }
+
+    & span {
+      font-size: 1.25rem;
+      color: rgba($cor-branca, 0.7);
+
+      @include respond(medium-small) {
+        font-size: 1.15rem;
+      }
+    }
+  }
+
+  &__celular {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24%;
+    min-width: 9rem;
   }
 }

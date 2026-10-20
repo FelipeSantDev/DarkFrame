@@ -1,0 +1,104 @@
+@use '../abstracts/auxiliares' as*;
+
+// Botões (links com cara de botão)
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-align: center;
+
+  &--dourado {
+    @extend %botao-dourado;
+  }
+
+  &--contorno {
+    @extend %botao-dourado;
+    background-color: transparent;
+    border-color: rgba($cor-dourado-claro, 0.6);
+
+    &:hover {
+      background-color: rgba($cor-dourado-claro, 0.15);
+    }
+  }
+}
+
+// Sobretítulo dourado das seções
+.sobretitulo {
+  color: $cor-dourado-claro;
+  letter-spacing: 0.65rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+// Moldura de navegador para os prints
+.janela {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border: 1px solid rgba($cor-dourado-claro, 0.35);
+  background: $cor-preta-claro;
+  box-shadow:
+    0 2.4rem 6rem rgba(0, 0, 0, 0.6),
+    0 0 4rem rgba($cor-dourado-medio, 0.18);
+
+  &__barra {
+    @include flex($align: center, $gap: 0.6rem);
+    padding: 0.9rem 1.2rem;
+    background: #141210;
+    border-bottom: 1px solid rgba($cor-dourado-claro, 0.15);
+
+    & i {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      background: rgba($cor-branca, 0.18);
+    }
+
+    & p {
+      margin-left: 0.8rem;
+      font-size: 1.1rem;
+      color: rgba($cor-branca, 0.55);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// Moldura de celular
+.celular {
+  border-radius: 2.2rem;
+  border: 0.5rem solid #141210;
+  outline: 1px solid rgba($cor-dourado-claro, 0.4);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.7);
+  background: $cor-preta;
+}
+
+// Botão flutuante do WhatsApp
+.whatsapp-flutuante {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 50;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: $cor-branca;
+  background: #25d366;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  @include respond(medium-small) {
+    width: 5rem;
+    height: 5rem;
+    right: 1.6rem;
+    bottom: 1.6rem;
+  }
+}
